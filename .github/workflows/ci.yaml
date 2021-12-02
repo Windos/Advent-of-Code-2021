@@ -1,7 +1,15 @@
 ---
 name: Advent of Code 2021 QA
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'test/**'
+
+  pull_request:
+    branches:
+      - main
 
 jobs:
   qa:
@@ -17,7 +25,7 @@ jobs:
       - name: Run all Pester tests
         shell: pwsh
         run: .github/workflows/_pester.ps1
-        
+
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v2
