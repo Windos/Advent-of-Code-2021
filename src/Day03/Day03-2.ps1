@@ -5,7 +5,7 @@ param (
 $Oxygen = $Diagnostic.Clone()
 $CarbonDioxide = $Diagnostic.Clone()
 
-function Get-NumberOfOnes {
+function Get-BitCount {
     param (
         [string[]] $Values,
         [int] $MaxSearch
@@ -32,7 +32,7 @@ function Get-NumberOfOnes {
 
 for ($x = 1; $x -lt $Diagnostic.Count; $x++) {
     if ($Oxygen.Count -gt 1) {
-        $OxygenOnes = Get-NumberOfOnes -Values $Oxygen -MaxSearch $x
+        $OxygenOnes = Get-BitCount -Values $Oxygen -MaxSearch $x
         if ($OxygenOnes[$x-1] -ge ($Oxygen.Count / 2)) {
             $TempOxygen = $Oxygen | Where-Object {$_.ToCharArray()[$x-1] -eq '1'}
         } else {
@@ -43,7 +43,7 @@ for ($x = 1; $x -lt $Diagnostic.Count; $x++) {
     }
 
     if ($CarbonDioxide.Count -gt 1) {
-        $CarbonDioxideOnes = Get-NumberOfOnes -Values $CarbonDioxide -MaxSearch $x
+        $CarbonDioxideOnes = Get-BitCount -Values $CarbonDioxide -MaxSearch $x
         if ($CarbonDioxideOnes[$x-1] -ge ($CarbonDioxide.Count / 2)) {
             $TempCarbonDioxide = $CarbonDioxide | Where-Object {$_.ToCharArray()[$x-1] -eq '0'}
         } else {
