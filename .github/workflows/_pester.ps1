@@ -1,6 +1,7 @@
 $PesterConfig = New-PesterConfiguration
 
 $PesterConfig.Run.Path = './test'
+$PesterConfig.Run.Exit = $true
 $PesterConfig.Run.PassThru = $true
 
 $PesterConfig.TestResult.Enabled = $true
@@ -16,6 +17,3 @@ $PesterConfig.CodeCoverage.RecursePaths = $true
 $PesterConfig.Output.Verbosity = 'Detailed'
 
 $PesterResult = Invoke-Pester -Configuration $PesterConfig
-if ($PesterResult.FailedCount -gt 0) {
-    throw "There were $($PesterResult.FailedCount) failed tests."
-}
