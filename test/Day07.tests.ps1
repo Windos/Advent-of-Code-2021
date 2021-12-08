@@ -18,11 +18,11 @@ Describe "Day 6: The Treachery of Whales" {
                 Should -Be 329389
         }
 
-        It "should process a larger dataset in under 5 seconds" {
+        It "should process a larger dataset in under 10 seconds" {
             $Timer = [System.Diagnostics.Stopwatch]::StartNew()
             . (Join-Path -Path $DayPath -ChildPath 'Day07-1.ps1') -Crabs $RealCrabs
             $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 5000
+            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 10000
         }
     }
     Context "Part 2" {

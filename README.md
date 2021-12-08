@@ -2,8 +2,8 @@
 
 <!-- Shields stolen from Josh Corr: https://github.com/joshcorr/Advent-of-code-2021 -->
 
-![](https://img.shields.io/badge/day%20📅-7-blue)
-![](https://img.shields.io/badge/stars%20⭐-14-yellow)
+![](https://img.shields.io/badge/day%20📅-8-blue)
+![](https://img.shields.io/badge/stars%20⭐-16-yellow)
 
 My Advent of Code 2021 PowerShell Solutions.
 
@@ -16,3 +16,4 @@ My Advent of Code 2021 PowerShell Solutions.
 | 05  | [Hydrothermal Venture](https://adventofcode.com/2021/day/5)    | [Part 1 & 2](src/Day05/Day05-1.ps1)                                    |
 | 06  | [Lanternfish](https://adventofcode.com/2021/day/6)             | [Part 1 & 2](src/Day06/Day06-1.ps1)                                    |
 | 07  | [The Treachery of Whales](https://adventofcode.com/2021/day/7) | [Part 1](src/Day07/Day07-1.ps1) &#124; [Part 2](src/Day07/Day07-2.ps1) |
+| 08  | [Seven Segment Search](https://adventofcode.com/2021/day/8)    | [Part 1](src/Day08/Day08-1.ps1) &#124; [Part 2](src/Day08/Day08-2.ps1) |
