@@ -1,4 +1,6 @@
-$ExcludedRules = @()
+$ExcludedRules = @(
+    'PSAvoidGlobalVars'
+)
 
 $PssaSplat = @{
     Path          = './src'
