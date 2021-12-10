@@ -2,7 +2,7 @@ BeforeAll {
     $DayPath = "$PSScriptRoot/../src/Day07/"
 }
 
-Describe "Day 6: The Treachery of Whales" {
+Describe "Day 7: The Treachery of Whales" {
     BeforeAll {
         $Crabs = '16,1,2,0,4,2,7,1,2,14'.Split(',')
         $RealCrabs = (Get-Content -Path "$PSScriptRoot/data/Day07.data.txt").Split(',')

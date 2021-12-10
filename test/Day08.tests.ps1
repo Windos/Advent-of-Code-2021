@@ -2,7 +2,7 @@ BeforeAll {
     $DayPath = "$PSScriptRoot/../src/Day08/"
 }
 
-Describe "Day 6: The Treachery of Whales" {
+Describe "Day 8: Seven Segment Search" {
     BeforeAll {
         $Signals = @(
             'be cfbegad cbdgef fgaecd cgeb fdcge agebfd fecdb fabcd edb | fdgacbe cefdb cefbgd gcbe'
