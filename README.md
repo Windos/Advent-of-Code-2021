@@ -18,3 +18,4 @@ My Advent of Code 2021 PowerShell Solutions.
 | 07  | [The Treachery of Whales](https://adventofcode.com/2021/day/7) | [Part 1](src/Day07/Day07-1.ps1) &#124; [Part 2](src/Day07/Day07-2.ps1) |
 | 08  | [Seven Segment Search](https://adventofcode.com/2021/day/8)    | [Part 1](src/Day08/Day08-1.ps1) &#124; [Part 2](src/Day08/Day08-2.ps1) |
 | 09  | [Smoke Basin](https://adventofcode.com/2021/day/9)             | [Part 1](src/Day09/Day09-1.ps1) &#124; [Part 2](src/Day09/Day09-2.ps1) |
+| 10  | [Syntax Scoring](https://adventofcode.com/2021/day/10)         | [Part 1](src/Day10/Day10-1.ps1) &#124; [Part 2](src/Day10/Day10-2.ps1) |
