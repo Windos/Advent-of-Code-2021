@@ -17,14 +17,6 @@ Describe "Day 6: Lanternfish" {
             . (Join-Path -Path $DayPath -ChildPath 'Day06-1.ps1') -LanternfishData $RealLanternfishData |
                 Should -Be 123584
         }
-
-        It "should process a larger dataset in under 2 seconds" {
-            $Timer = [System.Diagnostics.Stopwatch]::StartNew()
-            $RealLanternfishData = Get-Content -Path "$PSScriptRoot/data/Day06.data.txt"
-            . (Join-Path -Path $DayPath -ChildPath 'Day06-1.ps1') -LanternfishData $RealLanternfishData
-            $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 2000
-        }
     }
     Context "Part 2" {
         It "should return the correct answer given example data" {
@@ -36,14 +28,6 @@ Describe "Day 6: Lanternfish" {
             $RealLanternfishData = Get-Content -Path "$PSScriptRoot/data/Day06.data.txt"
             . (Join-Path -Path $DayPath -ChildPath 'Day06-1.ps1') -LanternfishData $RealLanternfishData -SimulatedDays 256 |
                 Should -Be 558128091987
-        }
-
-        It "should process a larger dataset with increased days in under 5 seconds" {
-            $Timer = [System.Diagnostics.Stopwatch]::StartNew()
-            $RealLanternfishData = Get-Content -Path "$PSScriptRoot/data/Day06.data.txt"
-            . (Join-Path -Path $DayPath -ChildPath 'Day06-1.ps1') -LanternfishData $RealLanternfishData -SimulatedDays 512
-            $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 5000
         }
     }
 }

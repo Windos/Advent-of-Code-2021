@@ -28,13 +28,6 @@ Describe "Day 8: Seven Segment Search" {
             . (Join-Path -Path $DayPath -ChildPath 'Day08-1.ps1') -Signal $RealSignals |
                 Should -Be 381
         }
-
-        It "should process a larger dataset in under 2 seconds" {
-            $Timer = [System.Diagnostics.Stopwatch]::StartNew()
-            . (Join-Path -Path $DayPath -ChildPath 'Day08-1.ps1') -Signal $RealSignals
-            $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 2000
-        }
     }
     Context "Part 2" {
         It "should return the correct answer given example data" {
@@ -45,13 +38,6 @@ Describe "Day 8: Seven Segment Search" {
         It "should return the correct answer given a larger dataset" {
             . (Join-Path -Path $DayPath -ChildPath 'Day08-2.ps1') -Signal $RealSignals |
                 Should -Be 1023686
-        }
-
-        It "should process a larger dataset with increased days in under 5 seconds" {
-            $Timer = [System.Diagnostics.Stopwatch]::StartNew()
-            . (Join-Path -Path $DayPath -ChildPath 'Day08-2.ps1') -Signal $RealSignals
-            $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 5000
         }
     }
 }

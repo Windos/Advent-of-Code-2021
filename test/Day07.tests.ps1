@@ -17,13 +17,6 @@ Describe "Day 7: The Treachery of Whales" {
             . (Join-Path -Path $DayPath -ChildPath 'Day07-1.ps1') -Crabs $RealCrabs |
                 Should -Be 329389
         }
-
-        It "should process a larger dataset in under 10 seconds" {
-            $Timer = [System.Diagnostics.Stopwatch]::StartNew()
-            . (Join-Path -Path $DayPath -ChildPath 'Day07-1.ps1') -Crabs $RealCrabs
-            $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 10000
-        }
     }
     Context "Part 2" {
         It "should return the correct answer given example data" {
@@ -34,13 +27,6 @@ Describe "Day 7: The Treachery of Whales" {
         It "should return the correct answer given a larger dataset" {
             . (Join-Path -Path $DayPath -ChildPath 'Day07-2.ps1') -Crabs $RealCrabs |
                 Should -Be 86397080
-        }
-
-        It "should process a larger dataset with increased days in under 10 seconds" {
-            $Timer = [System.Diagnostics.Stopwatch]::StartNew()
-            . (Join-Path -Path $DayPath -ChildPath 'Day07-2.ps1') -Crabs $RealCrabs
-            $Timer.Stop()
-            $Timer.Elapsed.TotalMilliseconds | Should -BeLessThan 10000
         }
     }
 }
