@@ -19,7 +19,8 @@ $Global:Flashes = 0
 
 function EnergyUp {
     param (
-        $X, $Y
+        $X,
+        $Y
     )
 
     $Octopus = ($Octopuses.Where({$_.PosX -eq $X -and $_.PosY -eq $Y}))[0]
