@@ -1,5 +1,6 @@
 $ExcludedRules = @(
     'PSAvoidGlobalVars'
+    'PSReviewUnusedParameter'
 )
 
 $PssaSplat = @{
