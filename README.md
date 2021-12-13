@@ -2,8 +2,8 @@
 
 <!-- Shields stolen from Josh Corr: https://github.com/joshcorr/Advent-of-code-2021 -->
 
-![](https://img.shields.io/badge/day%20📅-12-blue)
-![](https://img.shields.io/badge/stars%20⭐-24-yellow)
+![](https://img.shields.io/badge/day%20📅-13-blue)
+![](https://img.shields.io/badge/stars%20⭐-26-yellow)
 
 My Advent of Code 2021 PowerShell Solutions.
 
@@ -21,3 +21,4 @@ My Advent of Code 2021 PowerShell Solutions.
 | 10  | [Syntax Scoring](https://adventofcode.com/2021/day/10)         | [Part 1](src/Day10/Day10-1.ps1) &#124; [Part 2](src/Day10/Day10-2.ps1) |
 | 11  | [Dumbo Octopus](https://adventofcode.com/2021/day/11)          | [Part 1](src/Day11/Day11-1.ps1) &#124; [Part 2](src/Day11/Day11-2.ps1) |
 | 12  | [Passage Pathing](https://adventofcode.com/2021/day/12)        | [Part 1](src/Day12/Day12-1.ps1) &#124; [Part 2](src/Day12/Day12-2.ps1) |
+| 13  | [Transparent Origami](https://adventofcode.com/2021/day/13)    | [Part 1 & 2](src/Day13/Day13-1.ps1)                                    |
